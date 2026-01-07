@@ -1,0 +1,44 @@
+{
+  "name": "shencha",
+  "displayName": "ShenCha - AI Code Audit",
+  "description": "AI-powered code audit tool with multi-expert analysis",
+  "version": "0.1.0",
+  "publisher": "shencha",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Linters", "Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "shencha.audit", "title": "ShenCha: Audit Current File" },
+      { "command": "shencha.auditProject", "title": "ShenCha: Audit Project" },
+      { "command": "shencha.showReport", "title": "ShenCha: Show Report" }
+    ],
+    "configuration": {
+      "title": "ShenCha",
+      "properties": {
+        "shencha.apiKey": { "type": "string", "default": "", "description": "Anthropic API Key" },
+        "shencha.autoAudit": { "type": "boolean", "default": false, "description": "Auto audit on save" },
+        "shencha.language": { "type": "string", "default": "en", "enum": ["en", "zh"], "description": "Report language" }
+      }
+    },
+    "menus": {
+      "editor/context": [
+        { "command": "shencha.audit", "group": "shencha" }
+      ],
+      "explorer/context": [
+        { "command": "shencha.auditProject", "group": "shencha" }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  }
+}

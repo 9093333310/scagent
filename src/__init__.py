@@ -1,55 +1,109 @@
 """
-ShenCha Agent - 基于 Claude Agent SDK 的自主代码审计系统
+ShenCha Agent v2.1 - AI 代码审计助手
 
-特性：
-- 完全 LLM 驱动的自主决策
-- 持续运行和学习
-- 与用户实时沟通
-- 知识库积累和应用
-- 前后端代码检查 (TypeScript/ESLint)
-- PM2 错误日志分析
-- 多线程并行修复
+🚀 快速开始:
+    shencha              # 审计当前目录
+    shencha ./project    # 审计指定项目
+    shencha -q           # 快速审计
+    shencha config       # 配置向导
+    shencha doctor       # 环境检查
+
+📖 文档: https://github.com/x-tavern/shencha-agent
 """
 
-from .agent import ShenChaAgent, main, async_main
-from .knowledge import KnowledgeBase, Pattern, Fix, Insight
-from .reporters import AuditReporter, ConsoleReporter
-from .frontend_checker import FrontendChecker, FrontendCheckResult, TypeScriptError, MissingDependency
-from .log_analyzer import LogAnalyzer, LogAnalysisResult, LogError, ErrorCategory
-from .parallel_fixer import ParallelFixer, FixTask, FixResult, FixPriority, FixStatus, FixTaskGenerator, CommonFixes
-
-__version__ = "2.0.0"
+__version__ = "2.1.0"
 __author__ = "X-Tavern Team"
 
+# 核心组件
+from .agent import ShenChaAgent
+from .knowledge import KnowledgeBase, Pattern, Fix, Insight
+from .reporters import AuditReporter
+
+# 检查器
+from .frontend_checker import FrontendChecker, FrontendCheckResult
+from .log_analyzer import LogAnalyzer, LogAnalysisResult
+
+# 修复器
+from .parallel_fixer import ParallelFixer, FixTask, FixResult, FixPriority
+
+# 安全
+from .security import SecurityValidator
+
+# 配置
+from .config import ShenChaConfig, get_config
+
+# 错误处理
+from .errors import ShenChaError, ConfigError, APIError, handle_error
+
+# 输出格式化
+from .output import OutputFormatter, Issue, AuditResult
+
+# 缓存
+from .cache import FileCache
+
+# GitHub 集成
+from .integrations import GitHubIntegration, PRContext
+
+# 扫描器
+from .scanners import DependencyScanner, CoverageAnalyzer, PerformanceAnalyzer
+
+# HTML 报告
+from .html_reporter import HTMLReporter
+
+# CLI 入口
+from .cli import main
+
 __all__ = [
-    # Agent
+    # 版本
+    "__version__",
+    "__author__",
+    # 核心
     "ShenChaAgent",
-    "main",
-    "async_main",
-    # Knowledge
     "KnowledgeBase",
     "Pattern",
     "Fix",
     "Insight",
-    # Reporters
     "AuditReporter",
-    "ConsoleReporter",
-    # Frontend Checker
+    # 检查器
     "FrontendChecker",
     "FrontendCheckResult",
-    "TypeScriptError",
-    "MissingDependency",
-    # Log Analyzer
     "LogAnalyzer",
     "LogAnalysisResult",
-    "LogError",
-    "ErrorCategory",
-    # Parallel Fixer
+    # 修复器
     "ParallelFixer",
     "FixTask",
     "FixResult",
     "FixPriority",
-    "FixStatus",
-    "FixTaskGenerator",
-    "CommonFixes",
+    # 安全
+    "SecurityValidator",
+    # 配置
+    "ShenChaConfig",
+    "get_config",
+    # 错误
+    "ShenChaError",
+    "ConfigError",
+    "APIError",
+    "handle_error",
+    # 输出
+    "OutputFormatter",
+    "Issue",
+    "AuditResult",
+    # 缓存
+    "FileCache",
+    # GitHub
+    "GitHubIntegration",
+    "PRContext",
+    # 扫描器
+    "DependencyScanner",
+    "CoverageAnalyzer",
+    "PerformanceAnalyzer",
+    # HTML 报告
+    "HTMLReporter",
+    # CLI
+    "main",
 ]
+
+
+def cli():
+    """CLI 入口点 (兼容旧版)"""
+    main()
