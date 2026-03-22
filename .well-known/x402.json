@@ -1,0 +1,12 @@
+{
+  "name": "9093333310/scagent",
+  "description": "🔍 Discover security flaws and improve code quality with ShenCha, an AI-powered autonomous code audit agent designed for developers.",
+  "accepts": [
+    {
+      "network": "eip155:8453",
+      "asset": "USDC",
+      "address": "YOUR_WALLET_ADDRESS"
+    }
+  ],
+  "resources": []
+}
